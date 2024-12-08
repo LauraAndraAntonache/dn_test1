@@ -1,0 +1,18 @@
+2024-11-27 21:12:31.169731+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GREETING" not found (this database is empty); SQL statement:
+select g1_0.id,g1_0.content from greeting g1_0 [42104-224]
+2024-11-27 21:12:33.172389+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GREETING" not found (this database is empty); SQL statement:
+select g1_0.id,g1_0.content from greeting g1_0 [42104-224]
+2024-11-27 21:15:18.916945+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GREETING" not found (this database is empty); SQL statement:
+select g1_0.id,g1_0.content from greeting g1_0 [42104-224]
+2024-11-27 21:15:22.067048+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GREETING" not found (this database is empty); SQL statement:
+select g1_0.id,g1_0.content from greeting g1_0 [42104-224]
+2024-11-27 21:15:25.547846+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GREETING" not found (this database is empty); SQL statement:
+select g1_0.id,g1_0.content from greeting g1_0 [42104-224]
+2024-11-27 21:15:28.027175+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GREETING" not found (this database is empty); SQL statement:
+select g1_0.id,g1_0.content from greeting g1_0 [42104-224]
