@@ -1,12 +1,14 @@
 package ro.digitalnation;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -31,6 +33,15 @@ public class MVCController {
 	@GetMapping("/greetings")
 	public String greetings(Model model) {
 		model.addAttribute("greetings", repo.findAll());
+		model.addAttribute("greeting", new Greeting());
+		return "greetingPage";
+	}
+	
+	@GetMapping("/greeting/{id}")
+	public String greeting(Model model, @PathVariable Long id) {
+		List<Greeting> greeting = new ArrayList<Greeting>();
+		greeting.add(repo.findById(id).get());
+		model.addAttribute("greetings", greeting);
 		model.addAttribute("greeting", new Greeting());
 		return "greetingPage";
 	}
